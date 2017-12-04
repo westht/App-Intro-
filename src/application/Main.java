@@ -37,7 +37,7 @@ public class Main extends Application {
 	        stage.initStyle(StageStyle.UNDECORATED);
 	        stage.setScene(new Scene(pane));
 	        stage.show();
-
+ 
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

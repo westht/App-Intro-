@@ -1,57 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <AnchorPane fx:id="pane1" layoutX="133.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0090e4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="179.0" layoutY="77.0" text="Slide 1 title" textFill="WHITE">
+            <Label layoutX="140.0" layoutY="77.0" text="Japanese Lesson #1" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Loooooooooooooooooooooooooooooooooooooooooooooong descritption" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
-            <Label alignment="CENTER" layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" style="-fx-background-color: #fff; -fx-border-color: #00000020; -fx-border-width: 5px;" text="Slide 1" textFill="#969696">
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Hiragana and Katakana are two different ways of writing sounds!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label layoutX="81.0" layoutY="247.0" text="あ" textFill="WHITE">
                <font>
-                  <Font size="21.0" />
+                  <Font size="96.0" />
                </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label layoutX="339.0" layoutY="247.0" text="ア" textFill="WHITE">
+               <font>
+                  <Font size="96.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label layoutX="219.0" layoutY="247.0" text="A" textFill="WHITE">
+               <font>
+                  <Font size="96.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
             </Label>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="pane2" layoutX="143.0" layoutY="210.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00b871;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="179.0" layoutY="77.0" text="Slide 2 title" textFill="WHITE">
+            <Label layoutX="128.0" layoutY="77.0" text="Japanese Lesson #2" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Loooooooooooooooooooooooooooooooooooooooooooooong descritption" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
-            <Label alignment="CENTER" layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" style="-fx-background-color: #fff; -fx-border-color: #00000020; -fx-border-width: 5px;" text="Slide 2" textFill="#969696">
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Hiragana and kanji are usually used to write Japanese names!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label layoutX="52.0" layoutY="231.0" text="楓" textFill="WHITE">
                <font>
-                  <Font size="21.0" />
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="249.0" text="Kaede" textFill="WHITE">
+               <font>
+                  <Font size="71.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff5e5e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="179.0" layoutY="77.0" text="Slide 3 title" textFill="WHITE">
+            <Label layoutX="128.0" layoutY="77.0" text="Japanese Lesson #3" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB" size="28.0" />
                </font>
             </Label>
-            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Loooooooooooooooooooooooooooooooooooooooooooooong descritption" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
-            <Label alignment="CENTER" layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" style="-fx-background-color: #fff; -fx-border-color: #00000020; -fx-border-width: 5px;" text="Slide 3" textFill="#969696">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Katakana is usually used to write non-Japanese names!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
          </children>
       </AnchorPane>
       <JFXButton layoutX="382.0" layoutY="508.0" onAction="#nextAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" text="&gt;" textFill="WHITE">
