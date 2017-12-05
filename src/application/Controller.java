@@ -13,7 +13,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
 public class Controller implements Initializable {
-
+	/**
+	 * Distintos AnchorPane usados en la interfaz, representan las diferentes "páginas" (pane1,pane2,pane3)
+	 */
 	@FXML
 	private AnchorPane pane1;
 
@@ -27,7 +29,13 @@ public class Controller implements Initializable {
 	private Label countLabel;
 	
 
-
+	/**
+	 * <h1>Método translateAnimations</h1>
+	 * Este método establece la animación realizada al pasar a la siguiente slide.
+	 * @param duration parametro double que indica los segundos.
+	 * @param node parametro usado en caso de que exista un árbol(tree) en la interfaz
+	 * @param byX parametro double usado para la posición
+	 */
 	public void translateAnimation(double duration, Node node, double byX) {
 
 		TranslateTransition translateTransition = new TranslateTransition(Duration.seconds(duration), node);
@@ -35,7 +43,7 @@ public class Controller implements Initializable {
 		translateTransition.play();
 
 	}
-
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		translateAnimation(0.5, pane2, 600);
